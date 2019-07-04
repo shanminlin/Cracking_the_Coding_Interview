@@ -32,10 +32,13 @@ Space complexity: O(N) as we need to allocate extra space to double the length o
 
 6. Code
 """
+
+
 def is_substring(s1, s2):
     s1 = s1.lower()
     s2 = s2.lower()
     return s1 in s2
+
 
 def string_rotation(s1, s2):
     if s1 is None or s2 is None:
@@ -45,6 +48,7 @@ def string_rotation(s1, s2):
         return False
 
     return is_substring(s2, s1+s1)
+
 
 # 7.Test and debug
 assert string_rotation(None, None) == -1

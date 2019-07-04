@@ -30,8 +30,12 @@ Space Complexity: O(N) in always case as we need to allocate space for the hasht
 
 6. Code
 """
+
+
 # Solution 1
 from collections import Counter
+
+
 def palindrome_permutation(input_str):
     if input_str is None or input_str == '':
         return -1
@@ -48,6 +52,7 @@ def palindrome_permutation(input_str):
     # odd_count = sum(count % 2 == 1 for count in Counter(input_str).values())
 
     return odd_count <= 1
+
 
 # Test and debug
 def test():
@@ -67,5 +72,6 @@ def test():
                 print('Passed')
             except AssertionError:
                 print(solution.__name__, test_input, 'Failed')
+
 
 test()

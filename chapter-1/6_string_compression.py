@@ -37,6 +37,8 @@ consecutive characters, we need twice as long as the input.
 
 6. Code
 """
+
+
 # Solution 1
 def compress1(input_str):
     if (input_str is None) or (len(input_str) < 3):
@@ -62,8 +64,11 @@ def compress1(input_str):
 
     return compressed_str
 
+
 # Solution 2
 from itertools import groupby
+
+
 def compress2(input_str):
     if (input_str is None) or (len(input_str) < 3):
         return input_str
@@ -71,6 +76,7 @@ def compress2(input_str):
     compressed_str = ''.join(char + str(sum(1 for _ in group)) for char, group in groupby(input_str))
 
     return min(input_str, compressed_str, key=len)
+
 
 # 7. Test and debug
 def test():
@@ -89,6 +95,7 @@ def test():
                 print('Passed')
             except AssertionError:
                 print(solution.__name__, test_input, 'Failed')
+
 
 test()
 

@@ -32,6 +32,8 @@ Space complexity: O(1) in always case as we only need to allocate enough space f
 
 6. Code
 """
+
+
 def rotate_matrix(image):
     if (image is None) or (image == [[]]):
         return image
@@ -49,6 +51,7 @@ def rotate_matrix(image):
             image[j][i] = temp
 
     return image
+
 
 # 7. Test and debug
 assert rotate_matrix([[1,2,3], [4,5,6], [7,8,9]]) ==  [[7,4,1], [8,5,2], [9,6,3]]

@@ -35,6 +35,8 @@ Space complexity: O(1) for the in place solution.
 
 6. Code
 """
+
+
 # Solution 1, not in-place;
 def replace_spaces2(input_str):
     if (input_str is None) or (all(char == ' ' for char in input_str)):
@@ -45,12 +47,14 @@ def replace_spaces2(input_str):
 
     return ''.join(new_list)
 
+
 # Solution 2, not in place
 def replace_spaces1(input_str):
     if (input_str is None) or (all(char == ' ' for char in input_str)):
         return -1
 
     return input_str.strip().replace(' ', '%20')
+
 
 # Solution 3; close to in-place
 def replace_spaces3(input_str, true_len):
@@ -69,7 +73,6 @@ def replace_spaces3(input_str, true_len):
     input_str = list(input_str)
     input_str = input_str[:true_len] + [' '] * (new_len - true_len)
 
-
     for i in reversed(range(true_len)):
         if input_str[i] == ' ':
             input_str[new_len-3: new_len] = '%20'
@@ -79,6 +82,7 @@ def replace_spaces3(input_str, true_len):
             new_len -= 1
 
     return ''.join(input_str)
+
 
 # 7. Test and debug
 assert replace_spaces1('Mr John Smith     ') == 'Mr%20John%20Smith'

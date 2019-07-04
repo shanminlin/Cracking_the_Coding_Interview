@@ -37,6 +37,8 @@ Space complexity: O(1) in always case for the optimal solution
 
 6. Code
 """
+
+
 # Solution 1
 # space complexity: O(M+N)
 def zero_matrix1(matrix):
@@ -64,6 +66,7 @@ def zero_matrix1(matrix):
             matrix[i][col] = 0
 
     return matrix
+
 
 # Solution 2
 # Space complexity: O(1)
@@ -114,6 +117,7 @@ def zero_matrix2(matrix):
             matrix[i][0] = 0
 
     return matrix
+
 
 # 7 Test and debug
 assert zero_matrix1([[1, 0, 3, 4], [5, 6, 0, 8], [9, 10, 11, 12]]) == [[0, 0, 0, 0], [0, 0, 0, 0], [9, 0, 0, 12]]

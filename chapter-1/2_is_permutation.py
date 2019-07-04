@@ -39,6 +39,8 @@ Space complexity: O(N)
 
 6. Code
 """
+
+
 # Solution 1 
 def is_permutation1(str1, str2):
     if str1 is None or str2 is None:
@@ -59,8 +61,10 @@ def is_permutation1(str1, str2):
         dict2[char] = dict2.get(char, 0) + 1
     return dict1 == dict2
 
+
 # Solution 2
 from collections import Counter
+
 
 def is_permutation2(str1, str2):
     if str1 is None or str2 is None:
@@ -82,6 +86,7 @@ def is_permutation2(str1, str2):
         counter[char] -= 1
     return True
 
+
 # Solution 3
 def is_permutation3(str1, str2):
     if str1 is None or str2 is None:
@@ -94,6 +99,7 @@ def is_permutation3(str1, str2):
     str2 = str2.replace(' ', '').lower()
 
     return sorted(str1) == sorted(str2)
+
 
 # 7 Test and debug
 def test():
@@ -114,5 +120,6 @@ def test():
                 print('Passed')
             except AssertionError:
                 print(solution.__name__, test, 'Failed')
+
 
 test()

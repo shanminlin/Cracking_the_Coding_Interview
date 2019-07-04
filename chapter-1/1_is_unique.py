@@ -53,6 +53,8 @@ space complexity: - O(N) for solution 1 and 2
 
 6. Code
 """
+
+
 # solution 1
 def is_unique1(input_str):
     if input_str is None or len(input_str) < 2:
@@ -60,6 +62,7 @@ def is_unique1(input_str):
 
     input_str = input_str.lower()
     return len(set(input_str)) == len(input_str)
+
 
 # solution 2
 def is_unique2(input_str):
@@ -73,6 +76,7 @@ def is_unique2(input_str):
             return False
         seen_chars.add(char)
     return True
+
 
 # solution 3
 def is_unique3(input_str):
@@ -91,6 +95,7 @@ def is_unique3(input_str):
         seen_chars |= mask_char
     return True
 
+
 # 7 Test and debug
 def test():
     solutions = [is_unique1, is_unique2]
@@ -103,6 +108,7 @@ def test():
                 print('Passed')
             except AssertionError:
                 print(solution.__name__, test, 'Failed')
+
 
 test()
 
