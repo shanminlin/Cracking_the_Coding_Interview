@@ -10,7 +10,7 @@ class Node:
     """Define node for singly linked list.
 
     Attributes:
-        value: A number, a string or a boolean that a node stores.
+        value: Anything, a number, a string, a boolean or an object that a node stores.
         next: A reference to the next node in the list.
     """
 
