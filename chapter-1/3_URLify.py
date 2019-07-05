@@ -39,7 +39,7 @@ Space complexity: O(1) for the in place solution.
 
 # Solution 1, not in-place;
 def replace_spaces2(input_str):
-    if (input_str is None) or (all(char == ' ' for char in input_str)):
+    if input_str is None or input_str.isspace():
         return -1
 
     input_str = input_str.strip()
