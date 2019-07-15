@@ -35,13 +35,6 @@ So when we push [1, 2, 3, 4, 5, 6] into a stack and pop every element off, we ge
 to a second stack and pop every element off the second stack, we will get [1, 2, 3, 4, 5, 6], which is exactly the output
 we expect from a queue.
 
-For enqueue, it's always a single push operation, which should be O(1). It's a dequeue operation that can take O(n) in the worst case.
-
- If your stack is array based, as most are, you will always get O(n) worst case for a single operation.
-
-  The worst case for a single Dequeue is O(n), which is true. However, that only happens if there outbox is empty and there
-  are O(n) items in the inbox. In that case, the total cost for each of the next set of operations is O(1) since they each only need to pop the top item off the outbox. So that gives O(n) + n * O(n) which equals O(n) + O(n) which is still just O(n). In other words, any time you have an expensive dequeue, it's guaranteed to be followed by many cheap dequeues, so it averages out fine.
-
 5. Runtime analysis:
 Time complexity:
 For enqueue, each element will be pushed to two stacks (two push operations), which would be O(1) in always-case.
