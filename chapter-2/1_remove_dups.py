@@ -9,14 +9,14 @@ Solution:
 1. Clarify the question:
 Repeat the question: We are given a linked list which is unsorted. And we need to remove duplicate nodes from it.
 Clarify assumptions: - Does the linked list have loops? (We will assume no.)
-                     - Is it a singly or doubly linked list? (We will assume singly.).
+                     - Is it a singly or doubly linked list? (We will assume singly.)
 
 2. Inputs and outputs:
-So we're taking in a linked list and returning a linked list with duplicates removed.
+So we're taking in the head node of a singly linked list and returning a linked list with duplicates removed.
 
 3. Test and edge cases:
-edge: we can also take in an empty linked list or None object as an input.
-test: 4->3->10->4->2->9->2 should convert to 4->3->10->2->9.
+edge: We can also take in an empty head or None object as an input.
+test: We can also have regular input like this: 4->3->10->4->2->9->2 should convert to 4->3->10->2->9.
 
 4. Brainstorm solution:
 If the linked list has zero or only one node, or none object, we can just return the linked list as there would be no
