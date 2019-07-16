@@ -22,10 +22,10 @@ which is the length of the whole list - k + 1. So we could first iterate through
 to find its length, and then iterate through the list by (length of the list - k + 1) steps to get the kth-to-last node.
 The time complexity would be O(N) as we need to iterate through the list twice. The space complexity would be constant.
 
-We could also iterate through the list once by using a queue with length k. Then add nodes unitl the end of the list to
-the queue. As the list is longer than the queue. length - k nodes will be removed. We will be left of k nodes and the first
+We could also iterate through the list once by using a queue with length k. Then add nodes until the end of the list to
+the queue.the deque is bounded to the specified maximum length. Once a bounded length deque is full, when new items are added, a corresponding number of items are discarded from the opposite end. As the list is longer than the queue. length - k nodes will be removed. We will be left of k nodes and the first
 element in this queue with k nodes would be the kth-to-last node. The time complexity is stll O(N) but we only need to
-iterate through the list once, but the space complexity would be O(N) as well as we need additonal space for the queue.
+iterate through the list once, but the space complexity would be O(N) as well as we need additional space for the queue.
 
 To further reduce the space complexity, we could use two points that are separated by k-1 nodes. When the faster pointer
 gets to the end, the slower pointer would be at the kth node from the end. The time complexity would be O(N) and the
@@ -57,7 +57,7 @@ def kth_to_last_node1(head, k):
     Raises:
       IndexError: if k is smaller than 1 or greater than the length of the list.
     """
-    
+
     if k < 1:
         raise IndexError("Index out of range")
 
