@@ -48,7 +48,7 @@ def sum_lists(num1, num2):
     # We can also set the head as None.
     # But this needs more if-else checks as we move head through the list using head.next as None has no next parameter.
     head = new_head = Node(0)
-    
+
     while num1 is not None or num2 is not None:
         # caution: don't forget to check for None
         if num1 is None:

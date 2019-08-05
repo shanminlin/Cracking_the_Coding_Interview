@@ -70,6 +70,7 @@ class LinkedList:
             new_node.next = self.head
             self.head = new_node
 
+
 class LinkedListTest(unittest.TestCase):
     def setUp(self):
         self.node1 = Node(1)
