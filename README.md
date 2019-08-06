@@ -12,6 +12,7 @@ Though the book 'Cracking the Coding Interview' provides solutions and explainat
 - Time and space complexity analysis with explanation 
 - Alternative solutions are included because it is important to think about alternatives and how to improve the solution, leading to more efficient ones
 - Testing to make sure the code is correct
+<<<<<<< HEAD
 
 ## chapters included:
 - chapter 1 Arrays and strings
@@ -19,3 +20,7 @@ Though the book 'Cracking the Coding Interview' provides solutions and explainat
 - chapter 3 Stacks and queues
 - chapter 4 Trees and graphs
 - chapter 10 Sorting and searching
+||||||| merged common ancestors
+=======
+
+>>>>>>> Update README.md
