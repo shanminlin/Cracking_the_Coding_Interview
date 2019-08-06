@@ -67,7 +67,6 @@ current_top = 1. Since 5 > 1, push 1 to temporary stack:
                                          +----+----+----+
 
 
-
 5. Runtime analysis:
 Time complexity: O(N^2) in worst-case when the original stack is already sorted. The top element of the original stack
 would need to be moved O(N) times. Therefore for all elements, the time complexity would be approx O(N^2) times.
