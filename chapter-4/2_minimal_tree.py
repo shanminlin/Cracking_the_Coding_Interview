@@ -13,8 +13,7 @@ Repeat the question: We are a given a sorted array, and we need to create a bina
                                 1    3
 
 
-Clarify assumptions: - Is there a loop?
-                       (Assume yes.)
+Clarify assumptions:
 
 2. Inputs and outputs:
 So we're taking in an array such as [1, 2, 3] as input, and returning a BST.
